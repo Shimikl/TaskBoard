@@ -1,0 +1,88 @@
+
+        #tb {
+            width: 100%;
+            height: 1000px;
+            background-image: url("images/tile.jpg");
+            text-align: center;
+        }
+
+        #mytitle {
+            margin-top: 20px;
+            flex-flow: row;
+        }
+
+        #formbg {
+            margin-top: 50px;
+            margin-left: 20%;
+        }
+
+        #mytext {
+            background-image: url("images/formbg.jpg");
+            width: 700px;
+            height: 200px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .fade-in {
+            opacity: 1;
+            animation-name: fadeInOpacity;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
+        }
+
+        @keyframes fadeInOpacity {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .divnote {
+            background-image: url("images/notebg.png");
+            width: 200px;
+            height: 250px;
+            float: left;
+            position: relative;
+        }
+
+        .recivedate {
+            background: transparent;
+            border: none;
+            position: absolute;
+            bottom: 25px;
+            left: 5px;
+            font-weight: bold;
+        }
+
+        .recivetime {
+            background: transparent;
+            border: none;
+            position: absolute;
+            bottom: 10px;
+            left: 5px;
+            font-weight: bold;
+        }
+
+        .mynote {
+            width: 170px;
+            max-height: 150px;
+            font-family: 'Amarante';
+            font-size: 22px;
+            overflow: auto;
+        }
+
+        .glif {
+            position: absolute;
+            left: 140px;
+            display: none;
+        }
+
+        .divnote:hover .glif {
+            display: block;
+        }
+   
